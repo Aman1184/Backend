@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 const corsOptions = {
-  origin: 'bank-page-lp4c63hbk-aman-pandeys-projects-0d2608b1.vercel.app', // Replace with your actual Vercel app URL
+  origin: 'bank-page-xf6l-4n4gs2mcf-aman-pandeys-projects-0d2608b1.vercel.app', // Replace with your actual Vercel app URL
   optionsSuccessStatus: 200,
 };
 
