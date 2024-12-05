@@ -13,6 +13,8 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
+app.options('*', cors(corsOptions)); // Enable pre-flight requests for all routes
+
 // Configure Nodemailer Transporter
 const transporter = nodemailer.createTransport({
   service: 'gmail',
