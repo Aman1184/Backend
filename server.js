@@ -5,7 +5,12 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: 'bank-page-lp4c63hbk-aman-pandeys-projects-0d2608b1.vercel.app', // Replace with your actual Vercel app URL
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Configure Nodemailer Transporter
